@@ -5,7 +5,7 @@ import com.azdybel.algs.Interfaces.IAlgorithmRunner;
 public class SimpleAlgorithm implements IAlgorithmRunner {
     @Override
     public void setup() {
- //d
+ //dgggg
     }
 
     @Override
