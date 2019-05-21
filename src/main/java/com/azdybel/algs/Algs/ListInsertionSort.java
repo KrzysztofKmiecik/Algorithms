@@ -25,7 +25,7 @@ public class ListInsertionSort implements IInsertionSort<ListElement>, IAlgorith
             System.out.println(iterator.getValue());
             iterator = iterator.next;
         } while (iterator != myList.getHead());
-        System.out.println("ListInsertionSort");
+        System.out.print("ListInsertionSort :");
     }
 
     @Override

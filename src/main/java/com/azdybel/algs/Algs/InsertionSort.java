@@ -65,7 +65,7 @@ public class InsertionSort implements IInsertionSort<Integer>, IAlgorithmRunner 
         this.table[2] = 2;
         this.table[3] = 5;
         this.table[4] = 7;
-        System.out.println("InsertionSort");
+        System.out.print("InsertionSort :");
 //        for(int i=0; i<5; i++){
 //            this.table[i] = new Random(System.nanoTime()).nextInt();
 //        }

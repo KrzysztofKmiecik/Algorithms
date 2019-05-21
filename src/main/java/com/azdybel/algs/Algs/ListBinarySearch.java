@@ -48,7 +48,7 @@ public class ListBinarySearch implements IBinarySearch<ArrayList<Integer>>, IAlg
         myarray.add(7);
         this.list = myarray;
         this.valueToSearch = 2;
-        System.out.println("ListBinarySearch");
+        System.out.print("ListBinarySearch :");
 
     }
 

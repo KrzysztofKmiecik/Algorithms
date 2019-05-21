@@ -40,7 +40,7 @@ public class BinarySearch implements IBinarySearch<Integer[]>, IAlgorithmRunner 
 
         this.arr = new Integer[]{4, 3, 2, 5, 7};
         this.valueToSearch = 2;
-        System.out.println("ArrayBinarySearch");
+        System.out.print("ArrayBinarySearch :");
     }
 
     @Override
