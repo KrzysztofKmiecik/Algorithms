@@ -35,9 +35,9 @@ public class InsertionSort implements IInsertionSort<Integer>, IAlgorithmRunner 
 
     }
 
-    @Override
-    public void sort() {
 
+    @Override
+    public void sort(Integer[] table) {
 
         int temp;
         for (int i = 1; i < table.length; i++) {
@@ -49,9 +49,12 @@ public class InsertionSort implements IInsertionSort<Integer>, IAlgorithmRunner 
                 }
             }
         }
-        for (int i : this.table) {
-            System.out.println(i);
-        }
+        this.table = table;
+    }
+
+    @Override
+    public Integer[] getSortedArray() {
+        return table;
     }
 
     @Override
@@ -62,7 +65,7 @@ public class InsertionSort implements IInsertionSort<Integer>, IAlgorithmRunner 
         this.table[2] = 2;
         this.table[3] = 5;
         this.table[4] = 7;
-
+        System.out.println("InsertionSort");
 //        for(int i=0; i<5; i++){
 //            this.table[i] = new Random(System.nanoTime()).nextInt();
 //        }
@@ -72,7 +75,10 @@ public class InsertionSort implements IInsertionSort<Integer>, IAlgorithmRunner 
 
     @Override
     public void run() {
-
+        this.sort(table);
+//        for (int i : this.table) {
+//            System.out.println(i);
+//        }
 
     }
 }

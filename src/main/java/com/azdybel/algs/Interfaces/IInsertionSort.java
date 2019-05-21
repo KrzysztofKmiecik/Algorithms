@@ -4,5 +4,6 @@ public interface IInsertionSort<T> {
     int getSortedSize();
     T getElementAtIndex(int index);
     void insertElementAt(int index, T elementToInsert);
-    void sort();
+    void sort(T[] array);
+    T[] getSortedArray();
 }

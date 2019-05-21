@@ -1,10 +1,13 @@
 package com.azdybel.algs.Algs;
 
+import com.azdybel.algs.Interfaces.IAlgorithmRunner;
 import com.azdybel.algs.Interfaces.IBinarySearch;
 
-public class BinarySearch implements IBinarySearch<Integer[]> {
+public class BinarySearch implements IBinarySearch<Integer[]>, IAlgorithmRunner {
 
 
+    private Integer[] arr;
+    private Integer valueToSearch;
 
     @Override
     public int binarySearch(Integer[] arr, int x) {
@@ -32,4 +35,24 @@ public class BinarySearch implements IBinarySearch<Integer[]> {
     }
 
 
+    @Override
+    public void setup() {
+
+        this.arr = new Integer[]{4, 3, 2, 5, 7};
+        this.valueToSearch = 2;
+        System.out.println("ArrayBinarySearch");
+    }
+
+    @Override
+    public void run() {
+        InsertionSort insertionSort = new InsertionSort();
+        insertionSort.sort(this.arr);
+        this.arr = insertionSort.getSortedArray();
+        int result = this.binarySearch(this.arr, this.valueToSearch);
+//        if (result == -1)
+//            System.out.println("Element in arr not present");
+//        else
+//            System.out.println("Element found in arr  at "
+//                    + "index " + result);
+    }
 }
