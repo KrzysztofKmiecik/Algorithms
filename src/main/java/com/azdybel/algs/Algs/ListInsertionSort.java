@@ -5,7 +5,6 @@ import com.azdybel.algs.Interfaces.IInsertionSort;
 import com.azdybel.algs.Main.ListElement;
 import com.azdybel.algs.Main.MyList;
 
-import java.util.ArrayList;
 import java.util.Random;
 
 public class ListInsertionSort implements IInsertionSort<ListElement>, IAlgorithmRunner {
@@ -16,10 +15,14 @@ public class ListInsertionSort implements IInsertionSort<ListElement>, IAlgorith
     public void setup() {
 
         this.myList = new MyList();
-        ListElement twenty = new ListElement(20);
-        for (int i = 0; i < 450; i++) {
-            myList.AddOrdered(new ListElement(new Random(System.nanoTime()).nextInt(30)));
-        }
+      //  ListElement twenty = new ListElement(20);
+        myList.Add(new ListElement(1));
+        myList.Add(new ListElement(2));
+        myList.Add(new ListElement(3));
+
+//        for (int i = 0; i < 450; i++) {
+//            myList.AddOrdered(new ListElement(new Random(System.nanoTime()).nextInt(30)));
+//        }
         ListElement iterator = myList.getHead();
         do {
             System.out.println(iterator.getValue());
@@ -30,7 +33,8 @@ public class ListInsertionSort implements IInsertionSort<ListElement>, IAlgorith
 
     @Override
     public void run() {
-
+//        ListElement[] array= myList.to
+//        this.sort(array);
     }
 
     @Override
@@ -59,5 +63,14 @@ public class ListInsertionSort implements IInsertionSort<ListElement>, IAlgorith
         return new ListElement[0];
     }
 
+    public ListElement[] listTtoArray(MyList myList){
+        ListElement[] listElements=null;
+
+//        myList.
+//        for (ListElement listElement: myList.) {
+//        }
+
+        return listElements;
+    }
 
 }

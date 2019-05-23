@@ -4,6 +4,7 @@ import com.azdybel.algs.Interfaces.IAlgorithmRunner;
 import com.azdybel.algs.Interfaces.IBinarySearch;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class ListBinarySearch implements IBinarySearch<ArrayList<Integer>>, IAlgorithmRunner {
 
@@ -54,7 +55,8 @@ public class ListBinarySearch implements IBinarySearch<ArrayList<Integer>>, IAlg
 
     @Override
     public void run() {
-        ListInsertionSort listInsertionSort = new ListInsertionSort();
+        // ListInsertionSort listInsertionSort = new ListInsertionSort();
+        Collections.sort(this.list);
         int result = this.binarySearch(this.list, this.valueToSearch);
 //        if (result == -1)
 //            System.out.println("Element in arr not present");

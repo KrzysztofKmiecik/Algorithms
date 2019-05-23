@@ -8,4 +8,5 @@ public interface IMyList {
     void Remove(ListElement listElement);
     ListElement Find(int value);
     ListElement FindIndexForValue(int value);
+    ListElement getElement(int index);
 }

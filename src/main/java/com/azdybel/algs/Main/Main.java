@@ -6,8 +6,8 @@ import com.azdybel.algs.Helpers.TimeMeasurementHelper;
 
 public class Main {
     public static void main(String[] args) {
-//        ListInsertionSort myListIn = new ListInsertionSort();
-////        myListIn.setup();
+        //       ListInsertionSort myListIn = new ListInsertionSort();
+        //       myListIn.setup();
 //        InsertionSort insertionSort = new InsertionSort();
 //        TimeMeasurementHelper.ExecutionTimeMeasure(insertionSort,true);
 

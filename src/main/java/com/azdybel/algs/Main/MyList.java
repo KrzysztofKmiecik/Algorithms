@@ -113,4 +113,11 @@ public class MyList implements IMyList {
 
         return null;
     }
+
+    @Override
+    public ListElement getElement(int index) {
+
+        return null;
+    }
+
 }
