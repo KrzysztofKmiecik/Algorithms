@@ -1,21 +1,39 @@
 package com.azdybel.algs.Main;
 
-import com.azdybel.algs.Algs.BinarySearch;
-import com.azdybel.algs.Algs.ListBinarySearch;
+import com.azdybel.algs.Algs.BubbleSort;
+import com.azdybel.algs.Algs.CountingSort;
+import com.azdybel.algs.Algs.InsertionSort;
+import com.azdybel.algs.Algs.QuickSort;
 import com.azdybel.algs.Helpers.TimeMeasurementHelper;
+
 
 public class Main {
     public static void main(String[] args) {
-        //       ListInsertionSort myListIn = new ListInsertionSort();
-        //       myListIn.setup();
-//        InsertionSort insertionSort = new InsertionSort();
-//        TimeMeasurementHelper.ExecutionTimeMeasure(insertionSort,true);
 
-        BinarySearch binarySearch = new BinarySearch();
+
+        InsertionSort insertionSort = new InsertionSort();
+        TimeMeasurementHelper.ExecutionTimeMeasure(insertionSort,true);
+        BubbleSort bubbleSort1 = new BubbleSort();
+        TimeMeasurementHelper.ExecutionTimeMeasure(bubbleSort1, true);
+        CountingSort countingSort = new CountingSort();
+        TimeMeasurementHelper.ExecutionTimeMeasure(countingSort, true);
+        QuickSort quickSort=new QuickSort();
+        TimeMeasurementHelper.ExecutionTimeMeasure(quickSort, true);
+
+
+
+
+
+
+
+
+
+
+    /*    BinarySearch binarySearch = new BinarySearch();
         TimeMeasurementHelper.ExecutionTimeMeasure(binarySearch, true);
 
         ListBinarySearch listBinarySearch = new ListBinarySearch();
-        TimeMeasurementHelper.ExecutionTimeMeasure(listBinarySearch, true);
+        TimeMeasurementHelper.ExecutionTimeMeasure(listBinarySearch, true);*/
 //        ListInsertionSort listInsertionSort = new ListInsertionSort();
 //        TimeMeasurementHelper.ExecutionTimeMeasure(listInsertionSort,true);
 
@@ -24,6 +42,8 @@ public class Main {
         insertionSort.insertElementAt(2, 1);
         insertionSort.sort();*/
 
+        //       ListInsertionSort myListIn = new ListInsertionSort();
+        //       myListIn.setup();
 /////////////
        /* BinarySearch ob = new BinarySearch();
         Integer arr[] = {2, 3, 4, 10, 40};

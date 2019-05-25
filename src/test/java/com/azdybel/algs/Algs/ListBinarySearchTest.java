@@ -7,12 +7,11 @@ import org.junit.Test;
 import java.util.ArrayList;
 import java.util.Collections;
 
-import static org.junit.Assert.*;
-
 public class ListBinarySearchTest {
 
     private ArrayList<Integer> list;
     private Integer valueToSearch;
+
     @Before
     public void setUp() throws Exception {
         ArrayList<Integer> myarray = new ArrayList<Integer>();
@@ -30,9 +29,9 @@ public class ListBinarySearchTest {
     @Test
     public void binarySearch() {
 //        ListInsertionSort listInsertionSort = new ListInsertionSort();
-        ListBinarySearch listBinarySearch=new ListBinarySearch();
+        ListBinarySearch listBinarySearch = new ListBinarySearch();
         int result = listBinarySearch.binarySearch(this.list, this.valueToSearch);
 
-        Assert.assertEquals(0,result);
+        Assert.assertEquals(0, result);
     }
 }
