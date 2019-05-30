@@ -28,14 +28,10 @@ public class CountingSort implements IcountingSort, IAlgorithmRunner {
 
     @Override
     public int[] sort(int[] input, int k) {
-
-
             int counter[] = new int[k + 1];
-
             for (int i : input) {
                 counter[i]++;
             }
-
             int ndx = 0;
             for (int i = 0; i < counter.length; i++) {
                 while (0 < counter[i]) {
@@ -45,9 +41,4 @@ public class CountingSort implements IcountingSort, IAlgorithmRunner {
             }
             return input;
     }
-
-
-
-
-
 }

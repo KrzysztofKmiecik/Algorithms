@@ -5,7 +5,6 @@ import com.azdybel.algs.Interfaces.IBinarySearch;
 
 public class BinarySearch implements IBinarySearch<Integer[]>, IAlgorithmRunner {
 
-
     private Integer[] arr;
     private Integer valueToSearch;
 
@@ -15,15 +14,12 @@ public class BinarySearch implements IBinarySearch<Integer[]>, IAlgorithmRunner 
         int left = 0, right = arr.length - 1;
         while (left <= right) {
             int mid = left + (right - left) / 2;
-
             // Check if x is present at mid
             if (arr[mid] == x)
                 return mid;
-
             // If x greater, ignore left half
             if (arr[mid] < x)
                 left = mid + 1;
-
                 // If x is smaller, ignore right half
             else
                 right = mid - 1;
@@ -34,10 +30,8 @@ public class BinarySearch implements IBinarySearch<Integer[]>, IAlgorithmRunner 
         return -1;
     }
 
-
     @Override
     public void setup() {
-
         this.arr = new Integer[]{4, 3, 2, 5, 7};
         this.valueToSearch = 2;
         System.out.print("ArrayBinarySearch :");

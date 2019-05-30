@@ -1,9 +1,6 @@
 package com.azdybel.algs.Main;
 
-import com.azdybel.algs.Algs.BubbleSort;
-import com.azdybel.algs.Algs.CountingSort;
-import com.azdybel.algs.Algs.InsertionSort;
-import com.azdybel.algs.Algs.QuickSort;
+import com.azdybel.algs.Algs.*;
 import com.azdybel.algs.Helpers.TimeMeasurementHelper;
 
 
@@ -12,17 +9,20 @@ public class Main {
 
 
         InsertionSort insertionSort = new InsertionSort();
-        TimeMeasurementHelper.ExecutionTimeMeasure(insertionSort,true);
+        TimeMeasurementHelper.ExecutionTimeMeasure(insertionSort, true);
         BubbleSort bubbleSort1 = new BubbleSort();
         TimeMeasurementHelper.ExecutionTimeMeasure(bubbleSort1, true);
         CountingSort countingSort = new CountingSort();
         TimeMeasurementHelper.ExecutionTimeMeasure(countingSort, true);
-        QuickSort quickSort=new QuickSort();
+        QuickSort quickSort = new QuickSort();
         TimeMeasurementHelper.ExecutionTimeMeasure(quickSort, true);
 
+        HeapSort heapSort = new HeapSort();
+        TimeMeasurementHelper.ExecutionTimeMeasure(heapSort, true);
 
-
-
+       /* QSort qSort = new QSort();
+        qSort.setup();
+        qSort.run();*/
 
 
 

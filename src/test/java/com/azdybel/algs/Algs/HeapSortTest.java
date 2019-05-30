@@ -6,7 +6,7 @@ import org.junit.Test;
 
 import java.util.Arrays;
 
-public class QuickSortTest {
+public class HeapSortTest {
     int[] arr;
     int[] arrOK;
 
@@ -18,24 +18,23 @@ public class QuickSortTest {
         this.arr[2] = 2;
         this.arr[3] = 5;
         this.arr[4] = 1;
-        System.out.println("CountingSort :"); //2,3,4,5,7
+        System.out.println("HeapSort :"); //2,3,4,5,7
 
-        arrOK = new int[arr.length];
+       /* arrOK = new int[arr.length];
         for (int i = 0; i < arr.length; i++) {
             arrOK[i] = arr[i];
-        }
+        }*/
+        arrOK = Arrays.copyOf(arr, arr.length);
         Arrays.sort(arrOK);
     }
 
     @Test
-    public void quickSort() {
-        QuickSort myquickSort = new QuickSort();
-        int pp = myquickSort.partition(arr, 0, 4);
-        System.out.println("PP=" + pp);
-        int[] arrSorted= myquickSort.quickSort(arr,0,4);
-        for (int p : arrSorted) {
+    public void heapSort() {
+        HeapSort heapSort = new HeapSort();
+        heapSort.sort(arr);
+        for (int p : arr) {
             System.out.println(p);
         }
-        Assert.assertArrayEquals(arrOK,arrSorted);
+        Assert.assertArrayEquals(arrOK, arr);
     }
 }

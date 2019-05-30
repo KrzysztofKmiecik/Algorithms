@@ -18,10 +18,8 @@ public class BubbleSort implements IBubbleSort, IAlgorithmRunner {
 //                    numbers[j+1]=numbers[j];
 //                    numbers[j]=temp;
 //                }
-
             }
         }
-
         return numbers;
     }
 
@@ -43,8 +41,6 @@ public class BubbleSort implements IBubbleSort, IAlgorithmRunner {
         this.arr[3] = 5;
         this.arr[4] = 7;
         System.out.print("BubbleSort :");
-
-
     }
 
     @Override
