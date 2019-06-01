@@ -34,7 +34,7 @@ public class CountingSort implements IcountingSort, IAlgorithmRunner {
             }
             int ndx = 0;
             for (int i = 0; i < counter.length; i++) {
-                while (0 < counter[i]) {
+                while (counter[i]>0) {
                     input[ndx++] = i;
                     counter[i]--;
                 }

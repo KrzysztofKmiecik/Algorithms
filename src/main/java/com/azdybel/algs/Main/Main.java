@@ -24,7 +24,15 @@ public class Main {
         qSort.setup();
         qSort.run();*/
 
-
+Newton n=new Newton();
+TimeMeasurementHelper.ExecutionTimeMeasure(n,true);
+TimeMeasurementHelper.ExecutionTimeMeasure(n,true);
+TimeMeasurementHelper.ExecutionTimeMeasure(n,true);
+TimeMeasurementHelper.ExecutionTimeMeasure(n,true);
+TimeMeasurementHelper.ExecutionTimeMeasure(n,true);
+     //  System.out.println(n.factorial(40));
+       System.out.println(n.nPoK(12,7)); //792
+        n.printNewtonTriangle(13);
 
 
 

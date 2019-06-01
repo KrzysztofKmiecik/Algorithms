@@ -33,5 +33,9 @@ public class CountingSortTest {
         CountingSort countingSort = new CountingSort();
 
         Assert.assertArrayEquals(arrOK, countingSort.sort(arr, 7));
+
+        for(int i:arr){
+            System.out.print(String.format("%d,",i));
+        }
     }
 }
