@@ -6,8 +6,13 @@ import com.azdybel.algs.Helpers.TimeMeasurementHelper;
 
 public class Main {
     public static void main(String[] args) {
-
-
+        BackpackProblem backpackProblem = new BackpackProblem();
+        backpackProblem.setup();
+        backpackProblem.solve();
+        System.out.println(backpackProblem.getMaxValue());
+        //50 4 12 17 18 13 20 20 15 14
+///////////
+        /*
         InsertionSort insertionSort = new InsertionSort();
         TimeMeasurementHelper.ExecutionTimeMeasure(insertionSort, true);
         BubbleSort bubbleSort1 = new BubbleSort();
@@ -19,20 +24,23 @@ public class Main {
 
         HeapSort heapSort = new HeapSort();
         TimeMeasurementHelper.ExecutionTimeMeasure(heapSort, true);
-
+*/
        /* QSort qSort = new QSort();
         qSort.setup();
         qSort.run();*/
+/////////////////
 
-Newton n=new Newton();
-TimeMeasurementHelper.ExecutionTimeMeasure(n,true);
-TimeMeasurementHelper.ExecutionTimeMeasure(n,true);
-TimeMeasurementHelper.ExecutionTimeMeasure(n,true);
-TimeMeasurementHelper.ExecutionTimeMeasure(n,true);
-TimeMeasurementHelper.ExecutionTimeMeasure(n,true);
-     //  System.out.println(n.factorial(40));
-       System.out.println(n.nPoK(12,7)); //792
-        n.printNewtonTriangle(13);
+        /*Newton n = new Newton();
+        TimeMeasurementHelper.ExecutionTimeMeasure(n, true);
+        TimeMeasurementHelper.ExecutionTimeMeasure(n, true);
+        TimeMeasurementHelper.ExecutionTimeMeasure(n, true);
+        TimeMeasurementHelper.ExecutionTimeMeasure(n, true);
+        TimeMeasurementHelper.ExecutionTimeMeasure(n, true);
+        //  System.out.println(n.factorial(40));
+        System.out.println(n.nPoK(12, 7)); //792
+        n.printNewtonTriangle(13);*/
+
+
 
 
 
