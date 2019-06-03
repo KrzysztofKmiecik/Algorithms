@@ -1,16 +1,40 @@
 package com.azdybel.algs.Main;
 
-import com.azdybel.algs.Algs.*;
-import com.azdybel.algs.Helpers.TimeMeasurementHelper;
+import com.azdybel.algs.Algs.Stack;
+import com.azdybel.algs.Algs.StackItem;
+
+import java.util.PriorityQueue;
+import java.util.Queue;
 
 
 public class Main {
     public static void main(String[] args) {
-        BackpackProblem backpackProblem = new BackpackProblem();
-        backpackProblem.setup();
+        Queue<Integer> myQue=new PriorityQueue<Integer>();
+        myQue.add(2);
+        Stack stack = new Stack(5);
+        /*StackItem stackItem1 = new StackItem(1);
+        stack.push(stackItem1);
+        StackItem stackItem2 = new StackItem(2);
+        stack.push(stackItem2);
+        StackItem stackItem3 = new StackItem(3);
+        stack.push(stackItem3);
+
+        stack.push(new StackItem(4));
+        stack.printStack();
+        stack.pop();
+        stack.printStack();*/
+        for(int i=0;i<5;i++){
+            stack.push(new StackItem(i));
+        }
+        stack.printStack();
+        stack.pop();
+        System.out.println();
+        stack.printStack();
+      /*  BackpackProblem bóackpackProblem = new BackpackProblem();
+        backpackProblem.setup();ó
         backpackProblem.solve();
         System.out.println(backpackProblem.getMaxValue());
-        //50 4 12 17 18 13 20 20 15 14
+        //50 4 12 17 18 13 20 20 15 14*/
 ///////////
         /*
         InsertionSort insertionSort = new InsertionSort();
